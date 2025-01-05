@@ -278,6 +278,8 @@ class Window(QWidget):
 
         self.is_mouse_down = False
 
+        print([xmin, ymin, xmax, ymax])
+
         H, W, _ = self.img_3c.shape
         box_np = np.array([[xmin, ymin, xmax, ymax]])
         # print("bounding box:", box_np)
